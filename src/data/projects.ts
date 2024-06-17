@@ -7,7 +7,7 @@ const PROJECTS = [
         description: "Desarrollo e Implementación de Aplicación Web conocida como Sistema de Reseña Policial (SIREPOL) para el Servicio de Investigación Penal de la Policía, siendo su objetivo principal, la Automatización y Digitalización de los procesos relacionados a la Gestión Policial.",
         link: "#",
         github: "https://github.com/rafalejandrorh/SIREPOL",
-        image: "/public/images/projects/shots_sirepol.png",
+        image: "/images/projects/shots_sirepol.png",
         tags: [DataTechnologies.Laravel, DataTechnologies.Bootstrap, DataTechnologies.JQuery, DataTechnologies.PostgreSQL]
     },
     {
@@ -16,7 +16,7 @@ const PROJECTS = [
         description: "Desarrollo Frontend de una Aplicación Web, teniendo como finalidad la Emisión y Gestión de Pólizas de Previsión Funeraria por parte de la Aseguradora.",
         link: "#",
         github: "#",
-        image: "/public/images/projects/shots_funeasistencia.png",
+        image: "/images/projects/shots_funeasistencia.png",
         tags: [DataTechnologies.Laravel, DataTechnologies.Bootstrap, DataTechnologies.JQuery, DataTechnologies.CSS, DataTechnologies.Javascript]
     },
     {
@@ -25,7 +25,7 @@ const PROJECTS = [
         description: "Desarrollo e Implementación de Aplicación Web para Monitoreo y Gestión de una API Gateway y de Autenticación, conocido como Sistema Integrado de Gestión de API´s (SIIGEAPI)",
         link: "#",
         github: "#",
-        image: "/public/images/projects/shots_siigeapi.png",
+        image: "/images/projects/shots_siigeapi.png",
         tags: [DataTechnologies.Laravel, DataTechnologies.Bootstrap, DataTechnologies.JQuery, DataTechnologies.PostgreSQL]
     },
     {
@@ -34,7 +34,7 @@ const PROJECTS = [
         description: "Implementación de una API de Autenticación para validar credenciales de Empresas y Aliados Externos.",
         link: "#",
         github: "https://github.com/rafalejandrorh/SIIGEAPI-LaFe",
-        image: "/public/images/projects/shots_api_auth.png",
+        image: "/images/projects/shots_api_auth.png",
         tags: [DataTechnologies.Laravel, DataTechnologies.PostgreSQL]
     },
     {
@@ -43,7 +43,7 @@ const PROJECTS = [
         description: "Implementación de una API Gateway para Exponer Servicios a Instituciones y Empresas Externas.",
         link: "#",
         github: "https://github.com/rafalejandrorh/SIIGEAPI-LaFe",
-        image: "/public/images/projects/shots_api_gateway.png",
+        image: "/images/projects/shots_api_gateway.png",
         tags: [DataTechnologies.Laravel, DataTechnologies.PostgreSQL]
     }
 ]

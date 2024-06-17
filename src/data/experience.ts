@@ -5,7 +5,7 @@ const EXPERIENCE = [
         date: "Julio 2022 - Actualidad",
         title: "Backend Developer",
         company: "Simple Data Corp",
-        imageCompany: "/public/images/companies/logo_sdc.png",
+        imageCompany: "/images/companies/logo_sdc.png",
         description: "Desarrollo de Nuevas Funcionalidades para Aplicaciones Web en CodeIgniter || Desarrollo de Servicios en PHP (Web Services SOAP y API REST) || Integración de Servicios y Soluciones Externas y de Terceros",
         link: "https://www.simpledatacorp.com/",
         tags: [
@@ -22,7 +22,7 @@ const EXPERIENCE = [
         date: "Febrero 2022 - Julio 2022",
         title: "Backend Developer",
         company: "Cuerpo de Investigaciones Científicas, Penales y Criminalísticas (CICPC)",
-        imageCompany: "/public/images/companies/logo_cicpc.png",
+        imageCompany: "/images/companies/logo_cicpc.png",
         description: "Desarrollo Backend de Aplicaciones Web con PHP y Laravel || Diseño y Desarrollo de Microservicios en NodeJS y PHP || Implementación de Repositorio GIT para Control de Versiones || Administración de Servidores y Ambientes de Desarrollo, QA y Producción || Mantenimiento de Web Services SOAP desarrollados en PHP || Monitoreo y Soporte a las Aplicaciones en Producción para garantizar su operatividad",
         link: "https://www.cicpc.gob.ve/",
         tags: [
