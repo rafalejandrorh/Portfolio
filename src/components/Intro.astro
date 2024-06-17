@@ -1,0 +1,59 @@
+---
+import Badge from '../components/Badge.astro';
+import SocialPill from '../components/SocialPill.astro';
+
+import WhatsAppIcon from '../components/icons/WhatsApp.astro';
+import LinkedInIcon from '../components/icons/LinkedIn.astro';
+import GitHubIcon from '../components/icons/GitHub.astro';
+import GmailIcon from '../components/icons/Gmail.astro';
+---
+
+<div class="flex gap-4 mb-4">
+    <img 
+        class="rounded-full shadow-lg size-16 mb-2" 
+        src="/public/images/profilePhoto.jpg" 
+        alt="logo"
+    />
+
+    <a 
+        href="https://www.linkedin.com/in/rafael-rivero-4047591bb/" 
+        target="_blank" 
+        rel="noopener"
+        class="flex justify-center items-center">
+
+        <Badge> Disponible para trabajar </Badge>
+    </a> 
+</div>
+
+<h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
+    Hey, soy Rafael Rivero 
+</h1>
+
+<p class="text-xl lg:text-2xl text-wrap max-w-[700px]">
+    <span class="">+2 años de experiencia.</span> 
+    <strong>
+        <span class="text-green-300/100">Desarrollador Full-Stack. Especializado en la automatización de procesos.</span>
+    </strong>
+</p>
+
+<nav class="flex gap-4 mt-6 flex-wrap">
+    <SocialPill href="https://www.linkedin.com/in/rafael-rivero-4047591bb/">
+        <LinkedInIcon class="size-4 md:size-6" />
+        LinkedIn
+    </SocialPill>
+
+    <SocialPill href="https://github.com/rafalejandrorh">
+        <GitHubIcon class="size-4 md:size-6" />
+        GitHub
+    </SocialPill>
+
+    <SocialPill href="mailto:rafalejandrorivero@gmail.com?subject=Contacto&body=Hola, Rafael!">
+        <GmailIcon class="size-4 md:size-6" />
+        Gmail
+    </SocialPill>
+
+    <SocialPill href="https://api.whatsapp.com/send?phone=+584241385808&text=Hola,%20Rafael!">
+        <WhatsAppIcon class="size-4 md:size-6" />
+        WhatsApp
+    </SocialPill>
+</nav>

@@ -1,0 +1,51 @@
+---
+import DataProjects from "../data/projects";
+import LinkButton from "./LinkButton.astro"
+
+import LinkIcon from '../components/icons/Link.astro';
+import GitHubIcon from '../components/icons/GitHub.astro';
+---
+ 
+{
+    DataProjects.map(({ title, description, company, image, github, link, tags }) => (
+        <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0 mb-4">
+            <div class="w-full md:w-1/2">
+                <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+                    <img alt=`${title}` class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={image} />
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/2 md:max-w-lg">
+                <h3 class="text-2xl font-bold text-green-300/100">{title}</h3>
+                <h2 class="text-xl font-bold text-white text-pretty">{company}</h2>
+                <div class="flex flex-wrap mt-2">
+                    <div class="flex flex-wrap mb-2">
+                        {tags.map((tag) => ( 
+                            <span class={`flex rounded-full "rounded-full justify-center items-center gap-x-2 mt-2 ms-2 md:py-2 md:px-3 text-xd md:text-base border border-white/10 bg-white/5 hover:scale-110 hover:bg-white/10 transition py-1 px-2`}>
+                                <tag.icon class="size-4" />
+                                <p class="text-sm">{tag.name}</p>
+                            </span>
+                        ))}
+                    </div>
+
+                    <div class="mt-2 text-gray-200 dark:text-gray-400">{description}</div>
+
+                    <footer class="flex items-end justify-start mt-4 gap-x-4">
+                        {github && (
+                            <LinkButton href={github}>
+                            <GitHubIcon class="size-6" />
+                            Código Fuente
+                            </LinkButton>
+                        )}
+                        {link && (
+                            <LinkButton href={link}>
+                            <LinkIcon class="size-4" />
+                            Vista Previa
+                            </LinkButton>
+                        )}
+                    </footer>
+                </div>
+            </div>
+        </article>
+    ))
+}
