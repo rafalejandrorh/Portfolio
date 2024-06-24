@@ -3,7 +3,7 @@ import DataTechnologies from "../data/technologies";
 const EXPERIENCE = [
     {
         date: "Julio 2022 - Actualidad",
-        title: "Backend Developer",
+        title: "Full-Stack Developer",
         company: "Simple Data Corp",
         imageCompany: "/images/companies/logo_sdc.png",
         description: "Desarrollo de Nuevas Funcionalidades para Aplicaciones Web en CodeIgniter || Desarrollo de Servicios en PHP (Web Services SOAP y API REST) || Integración de Servicios y Soluciones Externas y de Terceros",
