@@ -1,35 +1,10 @@
 ---
-const navItems = [
-  {
-    title: "Experiencia Laboral",
-    label: "experiencia",
-    url: "/#experiencia-laboral",
-    target: "_self"
-  },
-  {
-    title: "Proyectos",
-    label: "proyectos",
-    url: "/#proyectos",
-    target: "_self"
-  },
-  {
-    title: "Sobre mí",
-    label: "sobre-mi",
-    url: "/#sobre-mi",
-    target: "_self"
-  },
-  {
-    title: "Contacto",
-    label: "contacto",
-    url: "mailto:rafalejandrorivero@gmail.com?subject=Contacto&body=Hola, Rafael!",
-    target: "_blank"
-  },
-]
+  import DataNavbar from "../data/navbar";
 ---
 <header class="fixed top-0 z-10 flex items-center justify-center w-full mx-auto mt-2">
     <nav class="flex px-3 text-sm font-medium rounded-full justify-center items-center">
         {
-            navItems.map(({ title, label, url, target }) => (
+            DataNavbar.map(({ title, label, url, target }) => (
               <a
                 class="relative block px-2 py-2 transition hover:text-green-300/100 dark:hover:text-green-400"
                 aria-label={label}
