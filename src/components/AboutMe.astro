@@ -1,5 +1,5 @@
 ---
- const personalImageAlt = "Rafael Rivero"
+  import DataAboutMe from "../data/aboutMe";
 ---
 
 <article class="flex flex-col items-center justify-center gap-8 text-white md:flex-row">
@@ -8,8 +8,7 @@
   >
 
     <p>
-      Me llamo Rafael Rivero. Cuento con experiencia en el Desarrollo de Aplicaciones Web y API Rest, principalmente en la automatización de procesos. 
-      Actualmente soy <strong> Desarrollador Full-Stack </strong> para una Startup importante del sector Telecomunicaciones.
+      <div set:html={DataAboutMe.description} />
     </p>
 
     <!-- <p>
@@ -28,8 +27,8 @@
   <img 
     width="200" 
     height="200" 
-    src="/images/profilePhoto.png" 
-    alt={personalImageAlt} 
+    src={DataAboutMe.image} 
+    alt={DataAboutMe.imageAlt} 
     class="order-1 object-cover w-64 h-full p-1 md:order-2 rotate-3 lg:p-2 lg:w-64 aspect-square rounded-2xl bg-black/20 dark:bg-green-500/5 ring-1 ring-black/70 dark:ring-white/20 " 
     style="object-position: 50% 50%"
   >
