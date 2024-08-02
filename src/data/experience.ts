@@ -15,7 +15,8 @@ const EXPERIENCE = [
             DataTechnologies.JQuery, 
             DataTechnologies.Bootstrap, 
             DataTechnologies.GitLab,
-            DataTechnologies.Docker
+            DataTechnologies.Docker,
+            DataTechnologies.Grafana
         ]
     },
     {

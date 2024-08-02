@@ -8,7 +8,7 @@ const PROJECTS = [
         link: "#",
         github: "https://github.com/rafalejandrorh/SIREPOL",
         image: "/images/projects/shots_sirepol.png",
-        tags: [DataTechnologies.Laravel, DataTechnologies.Bootstrap, DataTechnologies.JQuery, DataTechnologies.PostgreSQL]
+        tags: [DataTechnologies.Laravel, DataTechnologies.Bootstrap, DataTechnologies.JQuery, DataTechnologies.Redis, DataTechnologies.PostgreSQL, DataTechnologies.Grafana]
     },
     {
         title: "FuneAsistencia",

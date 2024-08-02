@@ -11,72 +11,84 @@ import GitLabIcon from '../components/icons/GitLab.astro';
 import DockerIcon from '../components/icons/Docker.astro';
 import GitIcon from '../components/icons/Git.astro';
 import NodeJsIcon from '../components/icons/NodeJs.astro';
+import GrafanaIcon from '../components/icons/Grafana.astro';
+import RedisIcon from '../components/icons/Redis.astro';
 
 const TAGS = {
     HTML: {
         name: "HTML",
-        class: "bg-white text-black",
+        class: "",
         icon: HTMLIcon
     },
     Javascript: {
         name: "Javascript",
-        class: "bg-black text-yellow",
+        class: "",
         icon: JavascriptIcon
     },
     CSS: {
         name: "CSS",
-        class: "bg-white text-blue",
+        class: "",
         icon: CSSIcon
     },
     Laravel: {
         name: "Laravel",
-        class: "bg-white text-blue",
+        class: "",
         icon: LaravelIcon
     },
     Bootstrap: {
         name: "Bootstrap",
-        class: "bg-white text-blue",
+        class: "",
         icon: BootstrapIcon
     },
     JQuery: {
         name: "JQuery",
-        class: "bg-white text-blue",
+        class: "",
         icon: JQueryIcon
     },
     PostgreSQL: {
         name: "PostgreSQL",
-        class: "bg-white text-blue",
+        class: "",
         icon: PostgresIcon
     },
     PHP: {
         name: "PHP",
-        class: "bg-white text-blue",
+        class: "",
         icon: PHPIcon
     },
     MySQL: {
         name: "MySQL",
-        class: "bg-white text-blue",
+        class: "",
         icon: MySQLIcon
     },
     GitLab: {
         name: "GitLab",
-        class: "bg-white text-blue",
+        class: "",
         icon: GitLabIcon
     },
     Docker: {
         name: "Docker",
-        class: "bg-white text-blue",
+        class: "",
         icon: DockerIcon
     },
     Git: {
         name: "Git",
-        class: "bg-white text-blue",
+        class: "",
         icon: GitIcon
     },
     NodeJs: {
         name: "Node.js",
-        class: "bg-white text-blue",
+        class: "",
         icon: NodeJsIcon
+    },
+    Grafana: {
+        name: "Grafana",
+        class: "",
+        icon: GrafanaIcon
+    },
+    Redis: {
+        name: "Redis",
+        class: "",
+        icon: RedisIcon
     }
 }
 
