@@ -1,4 +1,6 @@
 ---
+import environments from "../data/environments";
+
 import Badge from '@components/Badge.astro';
 import SocialPill from '@components/SocialPill.astro';
 
@@ -7,17 +9,20 @@ import LinkedInIcon from '@components/icons/LinkedIn.astro';
 import GitHubIcon from '@components/icons/GitHub.astro';
 import GmailIcon from '@components/icons/Gmail.astro';
 import TelegramIcon from '@components/icons/Telegram.astro';
+import ProfessionalLogoIcon from '@components/icons/ProfessionalLogo.astro';
 ---
 
 <div class="flex gap-4 mb-4">
+
+    <!-- <ProfessionalLogoIcon class="rounded-md shadow-lg size-24 mb-2 bg-white"/> -->
     <img 
-        class="rounded-full shadow-lg size-16 mb-2" 
+        class="rounded-full shadow-lg size-20 mb-2" 
         src="/images/profilePhoto.png" 
         alt="logo"
     />
 
     <a 
-        href="https://www.linkedin.com/in/rafael-rivero-4047591bb/" 
+        href={`https://www.linkedin.com/in/${environments.userLinkedin}`} 
         target="_blank" 
         rel="noopener"
         class="flex justify-center items-center">
@@ -27,7 +32,7 @@ import TelegramIcon from '@components/icons/Telegram.astro';
 </div>
 
 <h1 class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
-    Hey, soy Rafael Rivero 
+    Hey, soy {environments.fullNameDeveloper} 
     <span class="fi fi-ve"></span>
 </h1>
 
@@ -39,27 +44,27 @@ import TelegramIcon from '@components/icons/Telegram.astro';
 </p>
 
 <nav class="flex gap-4 mt-6 flex-wrap">
-    <SocialPill href="https://www.linkedin.com/in/rafael-rivero-4047591bb/">
+    <SocialPill href={`https://www.linkedin.com/in/${environments.userLinkedin}`}>
         <LinkedInIcon class="size-4 md:size-6" />
         LinkedIn
     </SocialPill>
 
-    <SocialPill href="https://github.com/rafalejandrorh">
+    <SocialPill href={`https://github.com/${environments.userGithub}`}>
         <GitHubIcon class="size-4 md:size-6" />
         GitHub
     </SocialPill>
 
-    <SocialPill href="mailto:rafalejandrorivero@gmail.com?subject=Contacto&body=Hola, Rafael!">
+    <SocialPill href={`mailto:${environments.email}?subject=Contacto&body=Hola, ${environments.nameDeveloper}!`}>
         <GmailIcon class="size-4 md:size-6" />
         Gmail
     </SocialPill>
 
-    <SocialPill href="https://api.whatsapp.com/send?phone=+584241385808&text=Hola,%20Rafael!">
+    <SocialPill href={`https://api.whatsapp.com/send?phone=${environments.phoneNumber}&text=Hola,%20${environments.nameDeveloper}!`}>
         <WhatsAppIcon class="size-4 md:size-6" />
         WhatsApp
     </SocialPill>
 
-    <SocialPill href="https://t.me/Rafalejandrorivero">
+    <SocialPill href={`https://t.me/${environments.userTelegram}`}>
         <TelegramIcon class="size-4 md:size-6" />
         Telegram
     </SocialPill>

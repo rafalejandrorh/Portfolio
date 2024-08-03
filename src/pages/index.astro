@@ -1,4 +1,6 @@
 ---
+import environments from "../data/environments";
+
 import Layout from '../layouts/Layout.astro';
 import Section from '@components/Section.astro';
 
@@ -10,11 +12,14 @@ import AboutMe from '@components/AboutMe.astro';
 import BriefcaseIcon from '@components/icons/Briefcase.astro';
 import CodeIcon from '@components/icons/Code.astro';
 import ProfileCheckIcon from '@components/icons/ProfileCheck.astro';
+
+const title = `Portfolio de ${environments.fullNameDeveloper} - Desarrollador Full-Stack`;
+const description = `Contrata a ${environments.nameDeveloper} para crear tu aplicación web o móvil`;
 ---
 
 <Layout 
-	title="Portfolio de Rafael Rivero - Desarrollador Full-Stack" 
-	description='Contrata a Rafael para crear tu aplicación web o móvil'
+	title={title}
+	description={description}
 >
 	<main class="px-4">
 		<Section class="py-44 pb-24">
