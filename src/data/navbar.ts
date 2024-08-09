@@ -21,7 +21,8 @@ const NAVBAR = [
     title: "Contacto",
     label: "contacto",
     url: "mailto:rafalejandrorivero@gmail.com?subject=Contacto&body=Hola, Rafael!",
-    target: "_blank"
+    target: "_blank",
+    rel: "noopener noreferrer"
   }
 ]
 
